@@ -1,0 +1,24 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+button, input, textarea {
+    border: 0;
+    background-color: transparent;
+}
+input:focus, textarea:focus {
+    outline: 0;
+}
+a {
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+ul, ol, menu {
+    list-style: none;
+}

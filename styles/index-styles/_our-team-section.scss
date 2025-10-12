@@ -1,0 +1,49 @@
+.our-team {
+    width: var(--our-team-width);
+    min-height: var(--our-team-height);
+    margin-top: var(--our-team-marginTop);
+    background-color: var(--our-team-bgColor);
+    padding: var(--our-team-padding);
+
+    &__heading {
+        font-size: var(--our-team-heading-fontSize);
+        font-weight: var(--our-team-heading-fontWeight);
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+    }
+    &__teammates-container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: var(--our-team-teammates-container-marginTop);
+        max-width: var(--our-team-teammates-container-width);
+        justify-content: space-between;
+    }
+    &__teammate-card {
+        max-width: var(--our-team-teammates-card-width);
+        max-height: var(--our-team-teammates-card-height);
+        background-color: var(--our-team-teammates-card-bgColor);
+
+        &-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        &-description {
+            display: block;
+            margin: var(--our-team-teammates-card-description-margin);
+            text-align: center;
+
+            &-name {
+                font-weight: var(--our-team-teammates-card-description-name-fontWeight);
+                color: var(--our-team-teammates-card-description-name-fontColor);
+                font-family: "Roboto", sans-serif;
+            }
+            &-position {
+                color: var(--our-team-teammates-card-description-position-fontColor);
+                font-family: "Roboto", sans-serif;
+                margin-top: var(--our-team-teammates-card-description-position-marginTop);
+            }
+        }
+    }
+}

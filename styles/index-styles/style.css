@@ -1,0 +1,316 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button, input, textarea {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+ul, ol, menu {
+  list-style: none;
+}
+
+:root {
+  --header-width: 100%;
+  --header-height: 80px;
+  --header-bgColor: white;
+  --logo-fontSize: 26px;
+  --logo-fontWeight: bold;
+  --logo-span-fontColor: #2196F3;
+  --header-nav-colGap: 120px;
+  --header-navigation-list-width: 281px;
+  --header-navigation-list-link-fontSize: 14px;
+  --header-navigation-list-link-fontWeight: 700;
+  --header-navigation-list-link-hover-fontColor: #2196F3;
+  --header-contacts-fontColor: #757575;
+  --header-contacts-colGap: 80px;
+  --header-contacts-email-hover-fontColor: #2196F3;
+  --footer-width: 100%;
+  --footer-height: 252px;
+  --footer-bgColor: #2F303A;
+  --footer-paddingLeft: 230px;
+  --footer-info-container-marginTop: 20px;
+  --footer-info-container-height: 81px;
+  --footer-info-container-rowGap: 10px;
+  --footer-info-container-info-fontSize: 14px;
+  --footer-info-container-info-fontColor: #757575;
+  --footer-info-container-addres-fontColor: white;
+}
+
+:root {
+  --main-width: 100%;
+  --main-height: 600px;
+  --main-bgColor: #2F303A;
+  --main-hedaer-fontSize: 44px;
+  --main-hedaer-fontWeight: 900;
+  --main-hedaer-lineHeight: 60px;
+  --main-hedaer-maxWidth: 696px;
+  --main-hedaer-fontColor: white;
+  --main-hedaer-letterSpacing: 5px;
+  --main-button-width: 216px;
+  --main-button-height: 50px;
+  --main-button-borderRadius: 4px;
+  --main-button-bgColor: #2196F3;
+  --main-button-fontColor: white;
+  --main-button-fontWeight: bold;
+  --main-button-letterSpacing: 2px;
+  --main-button-marginTop: 30px;
+  --main-button-drop-shadow: drop-shadow(0px 4px 4px #00000015);
+  --advantages-width: 1170px;
+  --advantages-marginTop: 100px;
+  --advantages-skill-maxWidth: 270px;
+  --advantages-skill-heading-fontColor: #212121;
+  --advantages-skill-heading-fontSize: 14px;
+  --advantages-skill-heading-fontWeight: bold;
+  --advantages-skill-text-fontColor: #757575;
+  --advantages-skill-text-fontSize: 14px;
+  --advantages-skill-text-lineHeight: 24px;
+  --advantages-skill-text-marginTop: 7px;
+  --what-we-do-width: 1170px;
+  --what-we-do-marginTop: 150px;
+  --what-we-do-heading-fontSize: 36px;
+  --what-we-do-heading-fontWeight: bold;
+  --what-we-do-gallery-marginTop: 40px;
+  --our-team-width: 100%;
+  --our-team-height: 648px;
+  --our-team-marginTop: 100px;
+  --our-team-bgColor: #F5F4FA;
+  --our-team-padding: 120px 0;
+  --our-team-heading-fontSize: 36px;
+  --our-team-heading-fontWeight: bold;
+  --our-team-teammates-container-marginTop: 80px;
+  --our-team-teammates-container-width: 1170px;
+  --our-team-teammates-card-width: 270px;
+  --our-team-teammates-card-height: 368px;
+  --our-team-teammates-card-bgColor: white;
+  --our-team-teammates-card-image-width: 100%;
+  --our-team-teammates-card-description-margin: 20px 0;
+  --our-team-teammates-card-description-name-fontWeight: 500;
+  --our-team-teammates-card-description-name-fontColor: #212121;
+  --our-team-teammates-card-description-position-fontColor: #757575;
+  --our-team-teammates-card-description-position-marginTop: 10px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--logo-fontSize);
+  font-weight: var(--logo-fontWeight);
+}
+.logo span {
+  color: var(--logo-span-fontColor);
+}
+
+.header {
+  min-width: var(--header-width);
+  min-height: var(--header-height);
+  background-color: var(--header-bgColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  -moz-column-gap: var(--header-nav-colGap);
+       column-gap: var(--header-nav-colGap);
+}
+.header__nav-navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: var(--header-navigation-list-width);
+}
+.header__nav-navigation-list-item-link {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--header-navigation-list-link-fontSize);
+  font-weight: var(--header-navigation-list-link-fontWeight);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header__nav-navigation-list-item-link:hover {
+  color: var(--header-navigation-list-link-hover-fontColor);
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  -moz-column-gap: var(--header-contacts-colGap);
+       column-gap: var(--header-contacts-colGap);
+  font-family: "Roboto", sans-serif;
+}
+.header__contacts-email, .header__contacts-phone-number {
+  color: var(--header-contacts-fontColor);
+}
+.header__contacts-email {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.header__contacts-email:hover {
+  color: var(--header-contacts-email-hover-fontColor);
+}
+
+.main {
+  min-width: var(--main-width);
+  min-height: var(--main-height);
+  background-color: var(--main-bgColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__header {
+  max-width: var(--main-hedaer-maxWidth);
+  font-size: var(--main-hedaer-fontSize);
+  font-weight: var(--main-hedaer-fontWeight);
+  line-height: var(--main-hedaer-lineHeight);
+  color: var(--main-hedaer-fontColor);
+  letter-spacing: var(--main-hedaer-letterSpacing);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.main__button {
+  min-width: var(--main-button-width);
+  min-height: var(--main-button-height);
+  background-color: var(--main-button-bgColor);
+  border-radius: var(--main-button-borderRadius);
+  color: var(--main-button-fontColor);
+  font-weight: var(--main-button-fontWeight);
+  letter-spacing: var(--main-button-letterSpacing);
+  margin-top: var(--main-button-marginTop);
+  filter: var(--main-button-drop-shadow);
+  cursor: pointer;
+}
+
+.advantages {
+  max-width: var(--advantages-width);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: var(--advantages-marginTop);
+}
+.advantages__skill {
+  max-width: var(--advantages-skill-maxWidth);
+}
+.advantages__skill-heading {
+  color: var(--advantages-skill-heading-fontColor);
+  font-size: var(--advantages-skill-heading-fontSize);
+  font-weight: var(--advantages-skill-heading-fontWeight);
+  font-family: "Roboto", sans-serif;
+}
+.advantages__skill-text {
+  color: var(--advantages-skill-text-fontColor);
+  font-size: var(--advantages-skill-text-fontSize);
+  line-height: var(--advantages-skill-text-lineHeight);
+  font-family: "Roboto", sans-serif;
+  margin-top: var(--advantages-skill-text-marginTop);
+}
+
+.what-we-do {
+  max-width: var(--what-we-do-width);
+  margin: 0 auto;
+  margin-top: var(--what-we-do-marginTop);
+}
+.what-we-do__heading {
+  font-size: var(--what-we-do-heading-fontSize);
+  font-weight: var(--what-we-do-heading-fontWeight);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.what-we-do__gallery-images {
+  margin-top: var(--what-we-do-gallery-marginTop);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-team {
+  width: var(--our-team-width);
+  min-height: var(--our-team-height);
+  margin-top: var(--our-team-marginTop);
+  background-color: var(--our-team-bgColor);
+  padding: var(--our-team-padding);
+}
+.our-team__heading {
+  font-size: var(--our-team-heading-fontSize);
+  font-weight: var(--our-team-heading-fontWeight);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.our-team__teammates-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: var(--our-team-teammates-container-marginTop);
+  max-width: var(--our-team-teammates-container-width);
+  justify-content: space-between;
+}
+.our-team__teammate-card {
+  max-width: var(--our-team-teammates-card-width);
+  max-height: var(--our-team-teammates-card-height);
+  background-color: var(--our-team-teammates-card-bgColor);
+}
+.our-team__teammate-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.our-team__teammate-card-description {
+  display: block;
+  margin: var(--our-team-teammates-card-description-margin);
+  text-align: center;
+}
+.our-team__teammate-card-description-name {
+  font-weight: var(--our-team-teammates-card-description-name-fontWeight);
+  color: var(--our-team-teammates-card-description-name-fontColor);
+  font-family: "Roboto", sans-serif;
+}
+.our-team__teammate-card-description-position {
+  color: var(--our-team-teammates-card-description-position-fontColor);
+  font-family: "Roboto", sans-serif;
+  margin-top: var(--our-team-teammates-card-description-position-marginTop);
+}
+
+.footer {
+  min-width: var(--footer-width);
+  min-height: var(--footer-height);
+  background-color: var(--footer-bgColor);
+  padding-left: var(--footer-paddingLeft);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__info-container {
+  min-height: var(--footer-info-container-height);
+  margin-top: var(--footer-info-container-marginTop);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--footer-info-container-rowGap);
+  font-family: "Roboto", sans-serif;
+}
+.footer__info-container-phone-number, .footer__info-container-email, .footer__info-container-addres {
+  font-size: var(--footer-info-container-info-fontSize);
+  color: var(--footer-info-container-info-fontColor);
+}
+.footer__info-container-addres {
+  color: var(--footer-info-container-addres-fontColor);
+}/*# sourceMappingURL=style.css.map */

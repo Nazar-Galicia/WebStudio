@@ -1,0 +1,12 @@
+@import "../global-elements/reset",
+        "../global-elements/global-variables",
+        "./variables";
+
+@import "../global-elements/logo";
+
+@import "../global-elements/header",
+        "./main-section",
+        "./advantages",
+        "./what-we-do-section",
+        "./our-team-section",
+        "../global-elements/footer";

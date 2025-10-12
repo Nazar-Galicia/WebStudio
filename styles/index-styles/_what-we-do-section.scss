@@ -1,0 +1,19 @@
+.what-we-do {
+    max-width: var(--what-we-do-width);
+    margin: 0 auto;
+    margin-top: var(--what-we-do-marginTop);
+
+    &__heading {
+        font-size: var(--what-we-do-heading-fontSize);
+        font-weight: var(--what-we-do-heading-fontWeight);
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+    }
+
+    &__gallery-images {
+        margin-top: var(--what-we-do-gallery-marginTop);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

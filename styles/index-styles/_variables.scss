@@ -1,0 +1,70 @@
+:root {
+    --main-width: 100%;
+    --main-height: 600px;
+    --main-bgColor: #2F303A;
+
+    --main-hedaer-fontSize: 44px;
+    --main-hedaer-fontWeight: 900;
+    --main-hedaer-lineHeight: 60px;
+    --main-hedaer-maxWidth: 696px;
+    --main-hedaer-fontColor: white;
+    --main-hedaer-letterSpacing: 5px;
+
+    --main-button-width: 216px;
+    --main-button-height: 50px;
+    --main-button-borderRadius: 4px;
+    --main-button-bgColor: #2196F3;
+    --main-button-fontColor: white;
+    --main-button-fontWeight: bold;
+    --main-button-letterSpacing: 2px;
+    --main-button-marginTop: 30px;
+    --main-button-drop-shadow: drop-shadow(0px 4px 4px #00000015);
+
+    --advantages-width: 1170px;
+    --advantages-marginTop: 100px;
+
+    --advantages-skill-maxWidth: 270px;
+
+    --advantages-skill-heading-fontColor: #212121;
+    --advantages-skill-heading-fontSize: 14px;
+    --advantages-skill-heading-fontWeight: bold;
+
+    --advantages-skill-text-fontColor: #757575;
+    --advantages-skill-text-fontSize: 14px;
+    --advantages-skill-text-lineHeight: 24px;
+    --advantages-skill-text-marginTop: 7px;
+
+    --what-we-do-width: 1170px;
+    --what-we-do-marginTop: 150px;
+
+    --what-we-do-heading-fontSize: 36px;
+    --what-we-do-heading-fontWeight: bold;
+
+    --what-we-do-gallery-marginTop: 40px;
+
+    --our-team-width: 100%;
+    --our-team-height: 648px;
+    --our-team-marginTop: 100px;
+    --our-team-bgColor: #F5F4FA;
+    --our-team-padding: 120px 0;
+
+    --our-team-heading-fontSize: 36px;
+    --our-team-heading-fontWeight: bold;
+
+    --our-team-teammates-container-marginTop: 80px;
+    --our-team-teammates-container-width: 1170px;
+
+    --our-team-teammates-card-width: 270px;
+    --our-team-teammates-card-height: 368px;
+    --our-team-teammates-card-bgColor: white;
+
+    --our-team-teammates-card-image-width: 100%;
+
+    --our-team-teammates-card-description-margin: 20px 0;
+
+    --our-team-teammates-card-description-name-fontWeight: 500;
+    --our-team-teammates-card-description-name-fontColor: #212121;
+
+    --our-team-teammates-card-description-position-fontColor: #757575;
+    --our-team-teammates-card-description-position-marginTop: 10px;
+}

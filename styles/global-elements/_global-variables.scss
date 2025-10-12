@@ -1,0 +1,34 @@
+:root {
+    --header-width: 100%;
+    --header-height: 80px;
+    --header-bgColor: white;
+
+    --logo-fontSize: 26px;
+    --logo-fontWeight: bold;
+    --logo-span-fontColor: #2196F3;
+
+    --header-nav-colGap: 120px;
+
+    --header-navigation-list-width: 281px;
+
+    --header-navigation-list-link-fontSize: 14px;
+    --header-navigation-list-link-fontWeight: 700;
+    --header-navigation-list-link-hover-fontColor: #2196F3;
+
+    --header-contacts-fontColor: #757575;
+    --header-contacts-colGap: 80px;
+    --header-contacts-email-hover-fontColor: #2196F3;
+
+    --footer-width: 100%;
+    --footer-height: 252px;
+    --footer-bgColor: #2F303A;
+    --footer-paddingLeft: 230px;
+
+    --footer-info-container-marginTop: 20px;
+    --footer-info-container-height: 81px;
+    --footer-info-container-rowGap: 10px;
+
+    --footer-info-container-info-fontSize: 14px;
+    --footer-info-container-info-fontColor: #757575;
+    --footer-info-container-addres-fontColor: white;
+}

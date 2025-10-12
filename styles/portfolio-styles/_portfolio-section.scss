@@ -1,0 +1,72 @@
+.portfolio {
+    max-width: var(--portfolio-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: var(--portfolio-marginTop);
+    margin-bottom: var(--portfolio-marginBottom);
+
+    &__filters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: var(--portfolio-filter-colGap);
+
+        &-button {
+            font-weight: var(--portfolio-filter-button-fontWeight);
+            font-family: "Roboto", sans-serif;
+            background-color: var(--portfolio-filter-button-bgColor);
+            border-radius: var(--portfolio-filter-button-borderRadius);
+            padding: var(--portfolio-filter-button-padding);
+            cursor: pointer;
+            transition: all 0.4s;
+
+            &:hover {
+                background-color: var(--portfolio-filter-button-hover-bgColor);
+                color: var(--portfolio-filter-button-hover-fontColor);
+                filter: var(--portfolio-filter-button-hover-dropShadow);
+            }
+        }
+    }
+
+    &__projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: var(--portfolio-projects-columnRowGap);
+        row-gap: var(--portfolio-projects-columnRowGap);
+        width: var(--portfolio-projects-width);
+        margin-top: var(--portfolio-projects-marginTop);
+
+        &-card {
+            outline: var(--portfolio-projects-card-border);
+            max-width: var(--portfolio-projects-card-width);
+            max-height: var(--portfolio-projects-card-height);
+
+            &-image {
+                width: var(--portfolio-projects-card-image-width);
+                height: auto;
+            }
+
+            &-text-inner {
+                margin: var(--portfolio-projects-card-text-inner-margin);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: var(--portfolio-projects-card-rowGap);
+
+                &-heading {
+                    font-size: var(--portfolio-projects-card-heading-fontSize);
+                    font-weight: var(--portfolio-projects-card-heading-fontWeight);
+                    font-family: "Roboto", sans-serif;
+                    letter-spacing: var(--portfolio-projects-card-heading-letterSpacing);
+                }
+                &-type {
+                    color: var(--portfolio-projects-card-type-fontColor);
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+        }
+    }
+}

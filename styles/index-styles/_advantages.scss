@@ -1,0 +1,26 @@
+.advantages {
+    max-width: var(--advantages-width);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: var(--advantages-marginTop);
+
+    &__skill {
+        max-width: var(--advantages-skill-maxWidth);
+
+        &-heading {
+            color: var(--advantages-skill-heading-fontColor);
+            font-size: var(--advantages-skill-heading-fontSize);
+            font-weight: var(--advantages-skill-heading-fontWeight);
+            font-family: "Roboto", sans-serif;
+        }
+        &-text {
+            color: var(--advantages-skill-text-fontColor);
+            font-size: var(--advantages-skill-text-fontSize);
+            line-height: var(--advantages-skill-text-lineHeight);
+            font-family: "Roboto", sans-serif;
+            margin-top: var(--advantages-skill-text-marginTop);
+        }
+    }
+}

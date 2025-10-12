@@ -1,0 +1,9 @@
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: var(--logo-fontSize);
+    font-weight: var(--logo-fontWeight);
+
+    & span {
+        color: var(--logo-span-fontColor);
+    }
+}

@@ -1,0 +1,32 @@
+.main {
+    min-width: var(--main-width);
+    min-height: var(--main-height);
+    background-color: var(--main-bgColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__header {
+        max-width: var(--main-hedaer-maxWidth);
+        font-size: var(--main-hedaer-fontSize);
+        font-weight: var(--main-hedaer-fontWeight);
+        line-height: var(--main-hedaer-lineHeight);
+        color: var(--main-hedaer-fontColor);
+        letter-spacing: var(--main-hedaer-letterSpacing);
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+    }
+    &__button {
+        min-width: var(--main-button-width);
+        min-height: var(--main-button-height);
+        background-color: var(--main-button-bgColor);
+        border-radius: var(--main-button-borderRadius);
+        color: var(--main-button-fontColor);
+        font-weight: var(--main-button-fontWeight);
+        letter-spacing: var(--main-button-letterSpacing);
+        margin-top: var(--main-button-marginTop);
+        filter: var(--main-button-drop-shadow);
+        cursor: pointer;
+    }
+}

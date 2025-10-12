@@ -1,0 +1,28 @@
+.footer {
+    min-width: var(--footer-width);
+    min-height: var(--footer-height);
+    background-color: var(--footer-bgColor);
+    padding-left: var(--footer-paddingLeft);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__info-container {
+        min-height: var(--footer-info-container-height);
+        margin-top: var(--footer-info-container-marginTop);
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--footer-info-container-rowGap);
+        font-family: "Roboto", sans-serif;
+
+        &-phone-number,
+        &-email,
+        &-addres {
+            font-size: var(--footer-info-container-info-fontSize);
+            color: var(--footer-info-container-info-fontColor);
+        }
+        &-addres {
+            color: var(--footer-info-container-addres-fontColor);
+        }
+    }
+}
