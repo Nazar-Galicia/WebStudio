@@ -19,7 +19,6 @@
             min-width: var(--header-navigation-list-width);
 
             &-item-link {
-                font-family: "Roboto", sans-serif;
                 font-size: var(--header-navigation-list-link-fontSize);
                 font-weight: var(--header-navigation-list-link-fontWeight);
                 cursor: pointer;
@@ -37,7 +36,6 @@
         align-items: center;
         justify-content: space-around;
         column-gap: var(--header-contacts-colGap);
-        font-family: "Roboto", sans-serif;
 
         &-email,
         &-phone-number {

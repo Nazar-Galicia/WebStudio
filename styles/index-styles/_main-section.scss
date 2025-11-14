@@ -15,7 +15,6 @@
         color: var(--main-hedaer-fontColor);
         letter-spacing: var(--main-hedaer-letterSpacing);
         text-align: center;
-        font-family: "Roboto", sans-serif;
     }
     &__button {
         min-width: var(--main-button-width);
@@ -28,5 +27,6 @@
         margin-top: var(--main-button-marginTop);
         filter: var(--main-button-drop-shadow);
         cursor: pointer;
+        line-height: var(--main-button-lineHeight);
     }
 }

@@ -52,6 +52,7 @@ ul, ol, menu {
   --footer-info-container-rowGap: 10px;
   --footer-info-container-info-fontSize: 14px;
   --footer-info-container-info-fontColor: #757575;
+  --footer-info-container-info-lineHeight: calc(24 / 14);
   --footer-info-container-addres-fontColor: white;
 }
 
@@ -67,6 +68,7 @@ ul, ol, menu {
   --portfolio-filter-button-hover-fontColor: white;
   --portfolio-filter-button-hover-dropShadow: drop-shadow(0px 4px 4px #000000a1);
   --portfolio-filter-button-padding: 5px 12px;
+  --portfolio-filter-button-lineHeight: calc(26 / 16);
   --portfolio-projects-columnRowGap: 30px;
   --portfolio-projects-width: 100%;
   --portfolio-projects-marginTop: 40px;
@@ -79,7 +81,13 @@ ul, ol, menu {
   --portfolio-projects-card-heading-fontSize: 18px;
   --portfolio-projects-card-heading-fontWeight: 700;
   --portfolio-projects-card-heading-letterSpacing: 1.5px;
+  --portfolio-projects-card-heading-lineHeight: calc(36 / 18);
   --portfolio-projects-card-type-fontColor: #757575;
+  --portfolio-projects-card-type-lineHeight: calc(30 / 16);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -113,7 +121,6 @@ ul, ol, menu {
   min-width: var(--header-navigation-list-width);
 }
 .header__nav-navigation-list-item-link {
-  font-family: "Roboto", sans-serif;
   font-size: var(--header-navigation-list-link-fontSize);
   font-weight: var(--header-navigation-list-link-fontWeight);
   cursor: pointer;
@@ -128,7 +135,6 @@ ul, ol, menu {
   justify-content: space-around;
   -moz-column-gap: var(--header-contacts-colGap);
        column-gap: var(--header-contacts-colGap);
-  font-family: "Roboto", sans-serif;
 }
 .header__contacts-email, .header__contacts-phone-number {
   color: var(--header-contacts-fontColor);
@@ -159,12 +165,13 @@ ul, ol, menu {
 }
 .portfolio__filters-button {
   font-weight: var(--portfolio-filter-button-fontWeight);
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   background-color: var(--portfolio-filter-button-bgColor);
   border-radius: var(--portfolio-filter-button-borderRadius);
   padding: var(--portfolio-filter-button-padding);
   cursor: pointer;
   transition: all 0.4s;
+  line-height: var(--portfolio-filter-button-lineHeight);
 }
 .portfolio__filters-button:hover {
   background-color: var(--portfolio-filter-button-hover-bgColor);
@@ -200,12 +207,12 @@ ul, ol, menu {
 .portfolio__projects-card-text-inner-heading {
   font-size: var(--portfolio-projects-card-heading-fontSize);
   font-weight: var(--portfolio-projects-card-heading-fontWeight);
-  font-family: "Roboto", sans-serif;
   letter-spacing: var(--portfolio-projects-card-heading-letterSpacing);
+  line-height: var(--portfolio-projects-card-heading-lineHeight);
 }
 .portfolio__projects-card-text-inner-type {
   color: var(--portfolio-projects-card-type-fontColor);
-  font-family: "Roboto", sans-serif;
+  line-height: var(--portfolio-projects-card-type-lineHeight);
 }
 
 .footer {
@@ -223,11 +230,11 @@ ul, ol, menu {
   display: flex;
   flex-direction: column;
   row-gap: var(--footer-info-container-rowGap);
-  font-family: "Roboto", sans-serif;
 }
 .footer__info-container-phone-number, .footer__info-container-email, .footer__info-container-addres {
   font-size: var(--footer-info-container-info-fontSize);
   color: var(--footer-info-container-info-fontColor);
+  line-height: var(--footer-info-container-info-lineHeight);
 }
 .footer__info-container-addres {
   color: var(--footer-info-container-addres-fontColor);

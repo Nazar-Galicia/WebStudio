@@ -8,7 +8,6 @@
     &__heading {
         font-size: var(--our-team-heading-fontSize);
         font-weight: var(--our-team-heading-fontWeight);
-        font-family: "Roboto", sans-serif;
         text-align: center;
     }
     &__teammates-container {
@@ -37,11 +36,9 @@
             &-name {
                 font-weight: var(--our-team-teammates-card-description-name-fontWeight);
                 color: var(--our-team-teammates-card-description-name-fontColor);
-                font-family: "Roboto", sans-serif;
             }
             &-position {
                 color: var(--our-team-teammates-card-description-position-fontColor);
-                font-family: "Roboto", sans-serif;
                 margin-top: var(--our-team-teammates-card-description-position-marginTop);
             }
         }

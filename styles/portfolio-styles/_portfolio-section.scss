@@ -15,12 +15,13 @@
 
         &-button {
             font-weight: var(--portfolio-filter-button-fontWeight);
-            font-family: "Roboto", sans-serif;
+            font-family: inherit;
             background-color: var(--portfolio-filter-button-bgColor);
             border-radius: var(--portfolio-filter-button-borderRadius);
             padding: var(--portfolio-filter-button-padding);
             cursor: pointer;
             transition: all 0.4s;
+            line-height: var(--portfolio-filter-button-lineHeight);
 
             &:hover {
                 background-color: var(--portfolio-filter-button-hover-bgColor);
@@ -59,12 +60,12 @@
                 &-heading {
                     font-size: var(--portfolio-projects-card-heading-fontSize);
                     font-weight: var(--portfolio-projects-card-heading-fontWeight);
-                    font-family: "Roboto", sans-serif;
                     letter-spacing: var(--portfolio-projects-card-heading-letterSpacing);
+                    line-height: var(--portfolio-projects-card-heading-lineHeight);
                 }
                 &-type {
                     color: var(--portfolio-projects-card-type-fontColor);
-                    font-family: "Roboto", sans-serif;
+                    line-height: var(--portfolio-projects-card-type-lineHeight);
                 }
             }
         }

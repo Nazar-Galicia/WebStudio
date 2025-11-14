@@ -5,7 +5,7 @@
 
     --main-hedaer-fontSize: 44px;
     --main-hedaer-fontWeight: 900;
-    --main-hedaer-lineHeight: 60px;
+    --main-hedaer-lineHeight: calc(60 / 44);
     --main-hedaer-maxWidth: 696px;
     --main-hedaer-fontColor: white;
     --main-hedaer-letterSpacing: 5px;
@@ -18,6 +18,7 @@
     --main-button-fontWeight: bold;
     --main-button-letterSpacing: 2px;
     --main-button-marginTop: 30px;
+    --main-button-lineHeight: calc(30 / 16);
     --main-button-drop-shadow: drop-shadow(0px 4px 4px #00000015);
 
     --advantages-width: 1170px;
@@ -31,7 +32,7 @@
 
     --advantages-skill-text-fontColor: #757575;
     --advantages-skill-text-fontSize: 14px;
-    --advantages-skill-text-lineHeight: 24px;
+    --advantages-skill-text-lineHeight: calc(24 / 14);
     --advantages-skill-text-marginTop: 7px;
 
     --what-we-do-width: 1170px;

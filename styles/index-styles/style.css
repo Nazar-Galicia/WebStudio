@@ -52,6 +52,7 @@ ul, ol, menu {
   --footer-info-container-rowGap: 10px;
   --footer-info-container-info-fontSize: 14px;
   --footer-info-container-info-fontColor: #757575;
+  --footer-info-container-info-lineHeight: calc(24 / 14);
   --footer-info-container-addres-fontColor: white;
 }
 
@@ -61,7 +62,7 @@ ul, ol, menu {
   --main-bgColor: #2F303A;
   --main-hedaer-fontSize: 44px;
   --main-hedaer-fontWeight: 900;
-  --main-hedaer-lineHeight: 60px;
+  --main-hedaer-lineHeight: calc(60 / 44);
   --main-hedaer-maxWidth: 696px;
   --main-hedaer-fontColor: white;
   --main-hedaer-letterSpacing: 5px;
@@ -73,6 +74,7 @@ ul, ol, menu {
   --main-button-fontWeight: bold;
   --main-button-letterSpacing: 2px;
   --main-button-marginTop: 30px;
+  --main-button-lineHeight: calc(30 / 16);
   --main-button-drop-shadow: drop-shadow(0px 4px 4px #00000015);
   --advantages-width: 1170px;
   --advantages-marginTop: 100px;
@@ -82,7 +84,7 @@ ul, ol, menu {
   --advantages-skill-heading-fontWeight: bold;
   --advantages-skill-text-fontColor: #757575;
   --advantages-skill-text-fontSize: 14px;
-  --advantages-skill-text-lineHeight: 24px;
+  --advantages-skill-text-lineHeight: calc(24 / 14);
   --advantages-skill-text-marginTop: 7px;
   --what-we-do-width: 1170px;
   --what-we-do-marginTop: 150px;
@@ -107,6 +109,10 @@ ul, ol, menu {
   --our-team-teammates-card-description-name-fontColor: #212121;
   --our-team-teammates-card-description-position-fontColor: #757575;
   --our-team-teammates-card-description-position-marginTop: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 .logo {
@@ -140,7 +146,6 @@ ul, ol, menu {
   min-width: var(--header-navigation-list-width);
 }
 .header__nav-navigation-list-item-link {
-  font-family: "Roboto", sans-serif;
   font-size: var(--header-navigation-list-link-fontSize);
   font-weight: var(--header-navigation-list-link-fontWeight);
   cursor: pointer;
@@ -155,7 +160,6 @@ ul, ol, menu {
   justify-content: space-around;
   -moz-column-gap: var(--header-contacts-colGap);
        column-gap: var(--header-contacts-colGap);
-  font-family: "Roboto", sans-serif;
 }
 .header__contacts-email, .header__contacts-phone-number {
   color: var(--header-contacts-fontColor);
@@ -185,7 +189,6 @@ ul, ol, menu {
   color: var(--main-hedaer-fontColor);
   letter-spacing: var(--main-hedaer-letterSpacing);
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
 .main__button {
   min-width: var(--main-button-width);
@@ -198,6 +201,7 @@ ul, ol, menu {
   margin-top: var(--main-button-marginTop);
   filter: var(--main-button-drop-shadow);
   cursor: pointer;
+  line-height: var(--main-button-lineHeight);
 }
 
 .advantages {
@@ -215,13 +219,11 @@ ul, ol, menu {
   color: var(--advantages-skill-heading-fontColor);
   font-size: var(--advantages-skill-heading-fontSize);
   font-weight: var(--advantages-skill-heading-fontWeight);
-  font-family: "Roboto", sans-serif;
 }
 .advantages__skill-text {
   color: var(--advantages-skill-text-fontColor);
   font-size: var(--advantages-skill-text-fontSize);
   line-height: var(--advantages-skill-text-lineHeight);
-  font-family: "Roboto", sans-serif;
   margin-top: var(--advantages-skill-text-marginTop);
 }
 
@@ -233,7 +235,6 @@ ul, ol, menu {
 .what-we-do__heading {
   font-size: var(--what-we-do-heading-fontSize);
   font-weight: var(--what-we-do-heading-fontWeight);
-  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 .what-we-do__gallery-images {
@@ -253,7 +254,6 @@ ul, ol, menu {
 .our-team__heading {
   font-size: var(--our-team-heading-fontSize);
   font-weight: var(--our-team-heading-fontWeight);
-  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 .our-team__teammates-container {
@@ -282,11 +282,9 @@ ul, ol, menu {
 .our-team__teammate-card-description-name {
   font-weight: var(--our-team-teammates-card-description-name-fontWeight);
   color: var(--our-team-teammates-card-description-name-fontColor);
-  font-family: "Roboto", sans-serif;
 }
 .our-team__teammate-card-description-position {
   color: var(--our-team-teammates-card-description-position-fontColor);
-  font-family: "Roboto", sans-serif;
   margin-top: var(--our-team-teammates-card-description-position-marginTop);
 }
 
@@ -305,11 +303,11 @@ ul, ol, menu {
   display: flex;
   flex-direction: column;
   row-gap: var(--footer-info-container-rowGap);
-  font-family: "Roboto", sans-serif;
 }
 .footer__info-container-phone-number, .footer__info-container-email, .footer__info-container-addres {
   font-size: var(--footer-info-container-info-fontSize);
   color: var(--footer-info-container-info-fontColor);
+  line-height: var(--footer-info-container-info-lineHeight);
 }
 .footer__info-container-addres {
   color: var(--footer-info-container-addres-fontColor);
