@@ -369,9 +369,9 @@ body {
   filter: var(--portfolio-filter-button-hover-dropShadow);
 }
 .portfolio__projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   -moz-column-gap: var(--portfolio-projects-columnRowGap);
        column-gap: var(--portfolio-projects-columnRowGap);
   row-gap: var(--portfolio-projects-columnRowGap);

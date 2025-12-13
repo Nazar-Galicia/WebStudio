@@ -30,9 +30,9 @@
     }
 
     &__projects {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         column-gap: var(--portfolio-projects-columnRowGap);
         row-gap: var(--portfolio-projects-columnRowGap);
         width: var(--portfolio-projects-width);
