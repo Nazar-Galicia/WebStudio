@@ -4,8 +4,6 @@
     background-color: var(--main-bgColor);
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
 
     &__header {
         max-width: var(--main-hedaer-maxWidth);
@@ -24,9 +22,14 @@
         color: var(--main-button-fontColor);
         font-weight: var(--main-button-fontWeight);
         letter-spacing: var(--main-button-letterSpacing);
-        margin-top: var(--main-button-marginTop);
         filter: var(--main-button-drop-shadow);
         cursor: pointer;
         line-height: var(--main-button-lineHeight);
     }
+}
+.main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

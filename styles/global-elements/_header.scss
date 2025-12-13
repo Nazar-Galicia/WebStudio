@@ -4,7 +4,6 @@
     background-color: var(--header-bgColor);
     display: flex;
     align-items: center;
-    justify-content: space-around;
 
     &__nav {
         display: flex;
@@ -17,6 +16,7 @@
             align-items: center;
             justify-content: space-between;
             min-width: var(--header-navigation-list-width);
+            column-gap: var(--header-navigation-list-colGap);
 
             &-item-link {
                 font-size: var(--header-navigation-list-link-fontSize);
@@ -51,4 +51,8 @@
             color: var(--header-contacts-email-hover-fontColor);
         }
     }
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
 }

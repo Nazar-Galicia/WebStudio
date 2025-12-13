@@ -216,18 +216,18 @@ ul, ol, menu {
   --logo-fontSize: 26px;
   --logo-fontWeight: bold;
   --logo-span-fontColor: #2196F3;
-  --header-nav-colGap: 120px;
+  --header-nav-colGap: 93px;
   --header-navigation-list-width: 281px;
+  --header-navigation-list-colGap: 50px;
   --header-navigation-list-link-fontSize: 14px;
   --header-navigation-list-link-fontWeight: 700;
   --header-navigation-list-link-hover-fontColor: #2196F3;
   --header-contacts-fontColor: #757575;
-  --header-contacts-colGap: 80px;
+  --header-contacts-colGap: 50px;
   --header-contacts-email-hover-fontColor: #2196F3;
   --footer-width: 100%;
   --footer-height: 252px;
   --footer-bgColor: #2F303A;
-  --footer-paddingLeft: 230px;
   --footer-info-container-marginTop: 20px;
   --footer-info-container-height: 81px;
   --footer-info-container-rowGap: 10px;
@@ -254,11 +254,9 @@ ul, ol, menu {
   --main-button-fontColor: white;
   --main-button-fontWeight: bold;
   --main-button-letterSpacing: 2px;
-  --main-button-marginTop: 30px;
   --main-button-lineHeight: calc(30 / 16);
   --main-button-drop-shadow: drop-shadow(0px 4px 4px #00000015);
-  --advantages-width: 1170px;
-  --advantages-marginTop: 100px;
+  --advantages-marginTop: 94px;
   --advantages-skill-maxWidth: 270px;
   --advantages-skill-heading-fontColor: #212121;
   --advantages-skill-heading-fontSize: 14px;
@@ -267,12 +265,10 @@ ul, ol, menu {
   --advantages-skill-text-fontSize: 14px;
   --advantages-skill-text-lineHeight: calc(24 / 14);
   --advantages-skill-text-marginTop: 7px;
-  --what-we-do-width: 1170px;
-  --what-we-do-marginTop: 150px;
+  --what-we-do-marginTop: 94px;
   --what-we-do-heading-fontSize: 36px;
   --what-we-do-heading-fontWeight: bold;
   --what-we-do-gallery-marginTop: 40px;
-  --our-team-width: 100%;
   --our-team-height: 648px;
   --our-team-marginTop: 100px;
   --our-team-bgColor: #F5F4FA;
@@ -296,6 +292,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1170px;
+  display: block;
+  margin: 0 auto;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: var(--logo-fontSize);
@@ -311,7 +313,6 @@ body {
   background-color: var(--header-bgColor);
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 .header__nav {
   display: flex;
@@ -325,6 +326,8 @@ body {
   align-items: center;
   justify-content: space-between;
   min-width: var(--header-navigation-list-width);
+  -moz-column-gap: var(--header-navigation-list-colGap);
+       column-gap: var(--header-navigation-list-colGap);
 }
 .header__nav-navigation-list-item-link {
   font-size: var(--header-navigation-list-link-fontSize);
@@ -353,14 +356,17 @@ body {
   color: var(--header-contacts-email-hover-fontColor);
 }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main {
   min-width: var(--main-width);
   min-height: var(--main-height);
   background-color: var(--main-bgColor);
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 .main__header {
   max-width: var(--main-hedaer-maxWidth);
@@ -379,18 +385,19 @@ body {
   color: var(--main-button-fontColor);
   font-weight: var(--main-button-fontWeight);
   letter-spacing: var(--main-button-letterSpacing);
-  margin-top: var(--main-button-marginTop);
   filter: var(--main-button-drop-shadow);
   cursor: pointer;
   line-height: var(--main-button-lineHeight);
 }
 
-.advantages {
-  max-width: var(--advantages-width);
+.main .container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.advantages {
   margin-top: var(--advantages-marginTop);
 }
 .advantages__skill {
@@ -408,9 +415,13 @@ body {
   margin-top: var(--advantages-skill-text-marginTop);
 }
 
+.advantages .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .what-we-do {
-  max-width: var(--what-we-do-width);
-  margin: 0 auto;
   margin-top: var(--what-we-do-marginTop);
 }
 .what-we-do__heading {
@@ -426,7 +437,6 @@ body {
 }
 
 .our-team {
-  width: var(--our-team-width);
   min-height: var(--our-team-height);
   margin-top: var(--our-team-marginTop);
   background-color: var(--our-team-bgColor);
@@ -473,7 +483,6 @@ body {
   min-width: var(--footer-width);
   min-height: var(--footer-height);
   background-color: var(--footer-bgColor);
-  padding-left: var(--footer-paddingLeft);
   display: flex;
   justify-content: center;
   flex-direction: column;

@@ -1,9 +1,4 @@
 .advantages {
-    max-width: var(--advantages-width);
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0 auto;
     margin-top: var(--advantages-marginTop);
 
     &__skill {
@@ -21,4 +16,9 @@
             margin-top: var(--advantages-skill-text-marginTop);
         }
     }
+}
+.advantages .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }

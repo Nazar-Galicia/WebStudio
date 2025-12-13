@@ -16,97 +16,110 @@
 <body>
     
     <header class="header">
-        <div class="header__nav">
-            <p class="header__nav-logo logo"><span>Web</span>Studio</p>
-            <nav class="header__nav-navigation">
-                <ul class="header__nav-navigation-list">
-                    <li class="header__nav-navigation-list-item"><a href="#" class="header__nav-navigation-list-item-link">Студія</a></li>
-                    <li class="header__nav-navigation-list-item"><a href="./portfolio.html" class="header__nav-navigation-list-item-link">Портфоліо</a></li>
-                    <li class="header__nav-navigation-list-item"><a href="#" class="header__nav-navigation-list-item-link">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="container">
+            <div class="header__nav">
+                <p class="header__nav-logo logo"><span>Web</span>Studio</p>
+                <nav class="header__nav-navigation">
+                    <ul class="header__nav-navigation-list">
+                        <li class="header__nav-navigation-list-item"><a href="#" class="header__nav-navigation-list-item-link">Студія</a></li>
+                        <li class="header__nav-navigation-list-item"><a href="./portfolio.html" class="header__nav-navigation-list-item-link">Портфоліо</a></li>
+                        <li class="header__nav-navigation-list-item"><a href="#" class="header__nav-navigation-list-item-link">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        <div class="header__contacts">
-            <a href="#" class="header__contacts-email">info@devstudio.com</a>
-            <p class="header__contacts-phone-number">+38 096 111 11 11</p>
+            <div class="header__contacts">
+                <a href="#" class="header__contacts-email">info@devstudio.com</a>
+                <p class="header__contacts-phone-number">+38 096 111 11 11</p>
+            </div>
         </div>
     </header>
 
-    <main class="main">
-        <h1 class="main__header">Ефективні рішення для вашого бізнесу</h1>
-        <button class="main__button">Замовити послугу</button>
+    <main>
+        <section class="main">
+            <div class="container">
+                <h1 class="main__header">Ефективні рішення для вашого бізнесу</h1>
+                <button class="main__button">Замовити послугу</button>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__skill">
+                    <h6 class="advantages__skill-heading">УВАГА ДО ДЕТАЛЕЙ</h6>
+                    <p class="advantages__skill-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                </div>
+                <div class="advantages__skill">
+                    <h6 class="advantages__skill-heading">ПУНКТУАЛЬНІСТЬ</h6>
+                    <p class="advantages__skill-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                </div>
+                <div class="advantages__skill">
+                    <h6 class="advantages__skill-heading">ПЛАНУВАННЯ</h6>
+                    <p class="advantages__skill-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                </div>
+                <div class="advantages__skill">
+                    <h6 class="advantages__skill-heading">СУЧАСНІ ТЕХНОЛОГІЇ</h6>
+                    <p class="advantages__skill-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="what-we-do">
+            <div class="container">
+                <h2 class="what-we-do__heading">Чим ми займаємося</h2>
+                <div class="what-we-do__gallery-images">
+                    <img src="./images/index-images/gallery-img3.png" alt="gallery-image1" class="what-we-do__gallery-images-image">
+                    <img src="./images/index-images/gallery-img2.png" alt="gallery-image2" class="what-we-do__gallery-images-image">
+                    <img src="./images/index-images/gallery-img.png" alt="gallery-image3" class="what-we-do__gallery-images-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="our-team">
+            <div class="container">
+                <h2 class="our-team__heading">Наша команда</h2>
+                <div class="our-team__teammates-container">
+                    <figure class="our-team__teammate-card">
+                        <img src="./images/index-images/teammate(4).jpg" alt="teammate image" class="our-team__teammate-card-image">
+                        <figcaption class="our-team__teammate-card-description">
+                            <h2 class="our-team__teammate-card-description-name">Ігор Дем'яненко</h2>
+                            <p class="our-team__teammate-card-description-position">Product Designer</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="our-team__teammate-card">
+                        <img src="./images/index-images/teammate(3).jpg" alt="teammate image" class="our-team__teammate-card-image">
+                        <figcaption class="our-team__teammate-card-description">
+                            <h2 class="our-team__teammate-card-description-name">Ольга Рєпіна</h2>
+                            <p class="our-team__teammate-card-description-position">Frontend Developer</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="our-team__teammate-card">
+                        <img src="./images/index-images/teammate(2).jpg" alt="teammate image" class="our-team__teammate-card-image">
+                        <figcaption class="our-team__teammate-card-description">
+                            <h2 class="our-team__teammate-card-description-name">Микола Тарасов</h2>
+                            <p class="our-team__teammate-card-description-position">Marketing</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="our-team__teammate-card">
+                        <img src="./images/index-images/teammate(1).jpg" alt="teammate image" class="our-team__teammate-card-image">
+                        <figcaption class="our-team__teammate-card-description">
+                            <h2 class="our-team__teammate-card-description-name">Михайло Єрмаков</h2>
+                            <p class="our-team__teammate-card-description-position">UI Designer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section class="advantages">
-        <div class="advantages__skill">
-            <h6 class="advantages__skill-heading">УВАГА ДО ДЕТАЛЕЙ</h6>
-            <p class="advantages__skill-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-        </div>
-        <div class="advantages__skill">
-            <h6 class="advantages__skill-heading">ПУНКТУАЛЬНІСТЬ</h6>
-            <p class="advantages__skill-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-        </div>
-        <div class="advantages__skill">
-            <h6 class="advantages__skill-heading">ПЛАНУВАННЯ</h6>
-            <p class="advantages__skill-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-        </div>
-        <div class="advantages__skill">
-            <h6 class="advantages__skill-heading">СУЧАСНІ ТЕХНОЛОГІЇ</h6>
-            <p class="advantages__skill-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-        </div>
-    </section>
-
-    <section class="what-we-do">
-        <h2 class="what-we-do__heading">Чим ми займаємося</h2>
-        <div class="what-we-do__gallery-images">
-            <img src="./images/index-images/gallery-img3.png" alt="gallery-image1" class="what-we-do__gallery-images-image">
-            <img src="./images/index-images/gallery-img2.png" alt="gallery-image2" class="what-we-do__gallery-images-image">
-            <img src="./images/index-images/gallery-img.png" alt="gallery-image3" class="what-we-do__gallery-images-image">
-        </div>
-    </section>
-
-    <section class="our-team">
-        <h2 class="our-team__heading">Наша команда</h2>
-        <div class="our-team__teammates-container">
-            <div class="our-team__teammate-card">
-                <img src="./images/index-images/teammate(4).jpg" alt="teammate image" class="our-team__teammate-card-image">
-                <div class="our-team__teammate-card-description">
-                    <h2 class="our-team__teammate-card-description-name">Ігор Дем'яненко</h2>
-                    <p class="our-team__teammate-card-description-position">Product Designer</p>
-                </div>
-            </div>
-            <div class="our-team__teammate-card">
-                <img src="./images/index-images/teammate(3).jpg" alt="teammate image" class="our-team__teammate-card-image">
-                <div class="our-team__teammate-card-description">
-                    <h2 class="our-team__teammate-card-description-name">Ольга Рєпіна</h2>
-                    <p class="our-team__teammate-card-description-position">Frontend Developer</p>
-                </div>
-            </div>
-            <div class="our-team__teammate-card">
-                <img src="./images/index-images/teammate(2).jpg" alt="teammate image" class="our-team__teammate-card-image">
-                <div class="our-team__teammate-card-description">
-                    <h2 class="our-team__teammate-card-description-name">Микола Тарасов</h2>
-                    <p class="our-team__teammate-card-description-position">Marketing</p>
-                </div>
-            </div>
-            <div class="our-team__teammate-card">
-                <img src="./images/index-images/teammate(1).jpg" alt="teammate image" class="our-team__teammate-card-image">
-                <div class="our-team__teammate-card-description">
-                    <h2 class="our-team__teammate-card-description-name">Михайло Єрмаков</h2>
-                    <p class="our-team__teammate-card-description-position">UI Designer</p>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
     <footer class="footer">
-        <p class="footer__logo logo"><span>Web</span>Studio</p>
-        <div class="footer__info-container">
-            <address class="footer__info-container-addres">м. Київ, пр-т Лесі Українки, 26</address>
-            <a href="#" class="footer__info-container-email">info@devstudio.com</a>
-            <p class="footer__info-container-phone-number">+38 096 111 11 11</p>
+        <div class="container">
+            <p class="footer__logo logo"><span>Web</span>Studio</p>
+            <div class="footer__info-container">
+                <address class="footer__info-container-addres">м. Київ, пр-т Лесі Українки, 26</address>
+                <a href="#" class="footer__info-container-email">info@devstudio.com</a>
+                <p class="footer__info-container-phone-number">+38 096 111 11 11</p>
+            </div>
         </div>
     </footer>
 
