@@ -238,7 +238,6 @@ ul, ol, menu {
 }
 
 :root {
-  --portfolio-width: 1170px;
   --portfolio-marginTop: 80px;
   --portfolio-marginBottom: 80px;
   --portfolio-filter-colGap: 8px;
@@ -269,6 +268,12 @@ ul, ol, menu {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1170px;
+  display: block;
+  margin: 0 auto;
 }
 
 .logo {
@@ -335,8 +340,6 @@ body {
 }
 
 .portfolio {
-  max-width: var(--portfolio-width);
-  margin: 0 auto;
   display: flex;
   align-items: center;
   flex-direction: column;
