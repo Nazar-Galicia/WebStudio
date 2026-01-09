@@ -24,7 +24,7 @@
             &:hover {
                 background-color: var(--portfolio-filter-button-hover-bgColor);
                 color: var(--portfolio-filter-button-hover-fontColor);
-                filter: var(--portfolio-filter-button-hover-dropShadow);
+                box-shadow: var(--portfolio-filter-button-hover-boxShadow);
             }
         }
     }
@@ -42,6 +42,8 @@
             outline: var(--portfolio-projects-card-border);
             max-width: var(--portfolio-projects-card-width);
             max-height: var(--portfolio-projects-card-height);
+            transition: all 0.2s;
+            cursor: pointer;
 
             &-image {
                 width: var(--portfolio-projects-card-image-width);
@@ -65,6 +67,10 @@
                     color: var(--portfolio-projects-card-type-fontColor);
                     line-height: var(--portfolio-projects-card-type-lineHeight);
                 }
+            }
+
+            &:hover {
+                box-shadow: var(--portfolio-projects-card-boxShadow);
             }
         }
     }

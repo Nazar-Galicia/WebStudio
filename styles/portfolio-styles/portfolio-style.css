@@ -246,7 +246,7 @@ ul, ol, menu {
   --portfolio-filter-button-borderRadius: 4px;
   --portfolio-filter-button-hover-bgColor: #2196F3;
   --portfolio-filter-button-hover-fontColor: white;
-  --portfolio-filter-button-hover-dropShadow: drop-shadow(0px 4px 4px #000000a1);
+  --portfolio-filter-button-hover-boxShadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
   --portfolio-filter-button-padding: 5px 12px;
   --portfolio-filter-button-lineHeight: calc(26 / 16);
   --portfolio-projects-columnRowGap: 30px;
@@ -256,6 +256,7 @@ ul, ol, menu {
   --portfolio-projects-card-width: 370px;
   --portfolio-projects-card-height: 404px;
   --portfolio-projects-card-rowGap: 10px;
+  --portfolio-projects-card-boxShadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
   --portfolio-projects-card-text-inner-margin: 10px 10px;
   --portfolio-projects-card-image-width: 100%;
   --portfolio-projects-card-heading-fontSize: 18px;
@@ -366,7 +367,7 @@ body {
 .portfolio__filters-button:hover {
   background-color: var(--portfolio-filter-button-hover-bgColor);
   color: var(--portfolio-filter-button-hover-fontColor);
-  filter: var(--portfolio-filter-button-hover-dropShadow);
+  box-shadow: var(--portfolio-filter-button-hover-boxShadow);
 }
 .portfolio__projects {
   display: grid;
@@ -382,6 +383,8 @@ body {
   outline: var(--portfolio-projects-card-border);
   max-width: var(--portfolio-projects-card-width);
   max-height: var(--portfolio-projects-card-height);
+  transition: all 0.2s;
+  cursor: pointer;
 }
 .portfolio__projects-card-image {
   width: var(--portfolio-projects-card-image-width);
@@ -403,6 +406,9 @@ body {
 .portfolio__projects-card-text-inner-type {
   color: var(--portfolio-projects-card-type-fontColor);
   line-height: var(--portfolio-projects-card-type-lineHeight);
+}
+.portfolio__projects-card:hover {
+  box-shadow: var(--portfolio-projects-card-boxShadow);
 }
 
 .footer {

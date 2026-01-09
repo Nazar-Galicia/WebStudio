@@ -9,7 +9,7 @@
     --portfolio-filter-button-borderRadius: 4px;
     --portfolio-filter-button-hover-bgColor: #2196F3;
     --portfolio-filter-button-hover-fontColor: white;
-    --portfolio-filter-button-hover-dropShadow: drop-shadow(0px 4px 4px #000000a1);
+    --portfolio-filter-button-hover-boxShadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
     --portfolio-filter-button-padding: 5px 12px;
     --portfolio-filter-button-lineHeight: calc(26 / 16);
 
@@ -21,6 +21,7 @@
     --portfolio-projects-card-width: 370px;
     --portfolio-projects-card-height: 404px;
     --portfolio-projects-card-rowGap: 10px;
+    --portfolio-projects-card-boxShadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 
     --portfolio-projects-card-text-inner-margin: 10px 10px;
 
