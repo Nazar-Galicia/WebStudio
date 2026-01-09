@@ -21,6 +21,9 @@
         max-width: var(--our-team-teammates-card-width);
         max-height: var(--our-team-teammates-card-height);
         background-color: var(--our-team-teammates-card-bgColor);
+        border-radius: var(--our-team-teammates-card-borderRadius);
+        box-shadow: var(--our-team-teammates-card-boxShadow);
+        -webkit-box-shadow: var(--our-team-teammates-card-boxShadow); 
 
         &-image {
             display: block;
