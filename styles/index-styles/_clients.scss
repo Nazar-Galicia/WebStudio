@@ -1,0 +1,33 @@
+.clients {
+    padding: 50px 215px;
+
+    &__icons-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        &-item {
+            cursor: pointer;
+
+            svg {
+                width: 170px;
+                height: 92px;
+                fill: #AFB1B8;
+                border: 2px solid #AFB1B8;
+                border-radius: 5px;
+            }
+
+            &:hover svg {
+                fill: #2196F3;
+                border-color: #2196F3;
+            }
+        }
+    }
+
+    &__heading {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

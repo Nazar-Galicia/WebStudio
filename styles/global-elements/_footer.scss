@@ -24,4 +24,51 @@
             color: var(--footer-info-container-addres-fontColor);
         }
     }
+    &__socials-title {
+        color: white;
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__socials {
+
+        &-container {
+            display: flex;
+            max-width: fit-content;
+            margin: 0 auto;
+            column-gap: 10px;
+
+            &-link {
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 100%;
+                background-color: rgba($color: #FFF, $alpha: 0.1);
+
+                & svg {
+                    width: 20px;
+                    height: 20px;
+                    
+                    & use {
+                        fill: white;
+                    }
+                }
+
+                &:hover {
+                    background-color: #2196F3;
+                }
+            }
+        }
+    }
+
+    & .container {
+        display: flex;
+        column-gap: 40px;
+    }
 }

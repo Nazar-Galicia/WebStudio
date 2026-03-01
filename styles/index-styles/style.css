@@ -283,7 +283,7 @@ ul, ol, menu {
   --our-team-teammates-container-marginTop: 80px;
   --our-team-teammates-container-width: 1170px;
   --our-team-teammates-card-width: 270px;
-  --our-team-teammates-card-height: 368px;
+  --our-team-teammates-card-height: 428px;
   --our-team-teammates-card-bgColor: white;
   --our-team-teammates-card-boxShadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   --our-team-teammates-card-borderRadius: 0 0 4px 4px;
@@ -354,6 +354,14 @@ body {
 }
 .header__contacts-email, .header__contacts-phone-number {
   color: var(--header-contacts-fontColor);
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.header__contacts-email svg, .header__contacts-phone-number svg {
+  width: 16px;
+  height: 13px;
 }
 .header__contacts-email {
   transition: all 0.3s;
@@ -361,6 +369,9 @@ body {
 }
 .header__contacts-email:hover {
   color: var(--header-contacts-email-hover-fontColor);
+}
+.header__contacts-email:hover svg {
+  fill: var(--header-contacts-email-hover-fontColor);
 }
 
 .header .container {
@@ -492,6 +503,7 @@ body {
   background-color: var(--our-team-teammates-card-bgColor);
   border-radius: var(--our-team-teammates-card-borderRadius);
   box-shadow: var(--our-team-teammates-card-boxShadow);
+  padding-bottom: 30px;
   -webkit-box-shadow: var(--our-team-teammates-card-boxShadow);
 }
 .our-team__teammate-card-image {
@@ -511,6 +523,65 @@ body {
 .our-team__teammate-card-description-position {
   color: var(--our-team-teammates-card-description-position-fontColor);
   margin-top: var(--our-team-teammates-card-description-position-marginTop);
+}
+.our-team__teammate-card-socials-container {
+  display: flex;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.our-team__teammate-card-socials-container-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100%;
+}
+.our-team__teammate-card-socials-container-link svg {
+  width: 20px;
+  height: 20px;
+}
+.our-team__teammate-card-socials-container-link svg use {
+  fill: #AFB1B8;
+}
+.our-team__teammate-card-socials-container-link:hover {
+  background-color: #2196F3;
+}
+.our-team__teammate-card-socials-container-link:hover svg use {
+  fill: white;
+}
+
+.clients {
+  padding: 50px 215px;
+}
+.clients__icons-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.clients__icons-list-item {
+  cursor: pointer;
+}
+.clients__icons-list-item svg {
+  width: 170px;
+  height: 92px;
+  fill: #AFB1B8;
+  border: 2px solid #AFB1B8;
+  border-radius: 5px;
+}
+.clients__icons-list-item:hover svg {
+  fill: #2196F3;
+  border-color: #2196F3;
+}
+.clients__heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .footer {
@@ -535,4 +606,45 @@ body {
 }
 .footer__info-container-addres {
   color: var(--footer-info-container-addres-fontColor);
+}
+.footer__socials-title {
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer__socials-container {
+  display: flex;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer__socials-container-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer__socials-container-link svg {
+  width: 20px;
+  height: 20px;
+}
+.footer__socials-container-link svg use {
+  fill: white;
+}
+.footer__socials-container-link:hover {
+  background-color: #2196F3;
+}
+.footer .container {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }/*# sourceMappingURL=style.css.map */

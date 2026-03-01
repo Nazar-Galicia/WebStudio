@@ -23,6 +23,7 @@
         background-color: var(--our-team-teammates-card-bgColor);
         border-radius: var(--our-team-teammates-card-borderRadius);
         box-shadow: var(--our-team-teammates-card-boxShadow);
+        padding-bottom: 30px;
         -webkit-box-shadow: var(--our-team-teammates-card-boxShadow); 
 
         &-image {
@@ -42,6 +43,39 @@
             &-position {
                 color: var(--our-team-teammates-card-description-position-fontColor);
                 margin-top: var(--our-team-teammates-card-description-position-marginTop);
+            }
+        }
+        &-socials-container {
+            display: flex;
+            max-width: fit-content;
+            margin: 0 auto;
+            column-gap: 10px;
+
+            &-link {
+                width: 44px;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 100%;
+
+                & svg {
+                    width: 20px;
+                    height: 20px;
+                    
+                    & use {
+                        fill: #AFB1B8;
+                    }
+                }
+
+                &:hover {
+                    background-color: #2196F3;
+
+                    & svg use {
+                        fill: white;
+                    }
+                }
             }
         }
     }

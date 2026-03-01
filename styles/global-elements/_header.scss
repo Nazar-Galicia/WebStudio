@@ -40,6 +40,15 @@
         &-email,
         &-phone-number {
             color: var(--header-contacts-fontColor);
+
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            & svg {
+                width: 16px;
+                height: 13px;
+            }
         }
 
         &-email {
@@ -49,6 +58,10 @@
 
         &-email:hover {
             color: var(--header-contacts-email-hover-fontColor);
+
+            & svg {
+                fill: var(--header-contacts-email-hover-fontColor);
+            }
         }
     }
 }
