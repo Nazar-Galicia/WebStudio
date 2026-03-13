@@ -72,13 +72,95 @@
             </div>
         </header>
 
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal__close" data-modal-close>×</button>
+
+                <h2 class="modal__title">
+                    Залиште свої дані, ми вам передзвонимо
+                </h2>
+
+                <form class="modal__form">
+                    <div class="modal__field">
+                        <label class="modal__label">Ім'я</label>
+
+                        <div class="modal__input-wrapper">
+                            <svg class="modal__icon">
+                                <use
+                                    href="./images/index-images/symbol-defs.svg#icon-user"
+                                ></use>
+                            </svg>
+
+                            <input class="modal__input" type="text" required />
+                        </div>
+                    </div>
+
+                    <div class="modal__field">
+                        <label class="modal__label">Телефон</label>
+
+                        <div class="modal__input-wrapper">
+                            <svg class="modal__icon">
+                                <use
+                                    href="./images/index-images/symbol-defs.svg#icon-phone"
+                                ></use>
+                            </svg>
+
+                            <input class="modal__input" type="tel" required />
+                        </div>
+                    </div>
+
+                    <div class="modal__field">
+                        <label class="modal__label">Пошта</label>
+
+                        <div class="modal__input-wrapper">
+                            <svg class="modal__icon">
+                                <use
+                                    href="./images/index-images/symbol-defs.svg#icon-mail"
+                                ></use>
+                            </svg>
+
+                            <input class="modal__input" type="email" required />
+                        </div>
+                    </div>
+
+                    <div class="modal__field">
+                        <label class="modal__label">Коментар</label>
+
+                        <textarea
+                            class="modal__textarea"
+                            placeholder="Введіть текст"
+                        ></textarea>
+                    </div>
+
+                    <div class="modal__checkbox">
+                        <input
+                            class="modal__checkbox-input"
+                            type="checkbox"
+                            id="agree"
+                        />
+
+                        <label class="modal__checkbox-label" for="agree">
+                            Погоджуюся з розсилкою та приймаю
+                            <a class="modal__link" href="#">Умови договору</a>
+                        </label>
+                    </div>
+
+                    <button class="modal__button" type="submit">
+                        Відправити
+                    </button>
+                </form>
+            </div>
+        </div>
+
         <main>
             <section class="main">
                 <div class="container">
                     <h1 class="main__header">
                         Ефективні рішення для вашого бізнесу
                     </h1>
-                    <button class="main__button">Замовити послугу</button>
+                    <button class="main__button" data-modal-open>
+                        Замовити послугу
+                    </button>
                 </div>
             </section>
 
@@ -526,7 +608,7 @@
                     </div>
                 </div>
                 <div class="footer__socials">
-                    <p class="footer__socials-title">приєднуйтесь</p>
+                    <p class="footer__title">приєднуйтесь</p>
                     <ul class="footer__socials-container">
                         <li class="footer__socials-container-item">
                             <a class="footer__socials-container-link" href="#"
@@ -562,7 +644,26 @@
                         </li>
                     </ul>
                 </div>
+                <form action="#" class="footer__advert-form">
+                    <p class="footer__title">приєднуйтесь</p>
+                    <div class="footer__advert-wrapper">
+                        <input
+                            class="footer__advert-input"
+                            type="email"
+                            placeholder="E-mail"
+                            required
+                        />
+                        <button class="footer__advert-button" type="submit">
+                            <span>Підписатися</span
+                            ><img
+                                src="./images/index-images/icons/icon-send.svg"
+                                alt="icon-send"
+                            />
+                        </button>
+                    </div>
+                </form>
             </div>
         </footer>
+        <script src="./scripts/script.js"></script>
     </body>
 </html>

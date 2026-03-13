@@ -24,7 +24,7 @@
             color: var(--footer-info-container-addres-fontColor);
         }
     }
-    &__socials-title {
+    &__title {
         color: var(--footer-socials-title-color);
         font-size: var(--footer-socials-title-fontSize);
         font-family: "Roboto", sans-serif;
@@ -64,6 +64,37 @@
                     background-color: var(--footer-socials-container-link-svg-hover-bgColor);
                 }
             }
+        }
+    }
+
+    &__advert {
+        
+        &-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: var(--footer-advert-form-colGap);
+        }
+        &-input {
+            padding: var(--footer-advert-form-input-padding);
+            min-width: var(--footer-advert-form-input-minWidth);
+            border: var(--footer-advert-form-input-border);
+            border-radius: var(--footer-advert-form-input-borderRadius);
+            color: white;  
+        }
+        &-button {
+            display: flex;
+            align-items: center;
+            column-gap: var(--footer-advert-form-button-colGap);
+            color: var(--footer-advert-form-button-color);
+            padding: var(--footer-advert-form-button-padding);
+            background-color: var(--footer-advert-form-button-bgColor);
+            border-radius: var(--footer-advert-form-button-borderRadius);
+            cursor: pointer;
         }
     }
 

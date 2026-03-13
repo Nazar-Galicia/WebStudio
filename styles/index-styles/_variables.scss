@@ -105,4 +105,56 @@
 
     --clients-heading-fontSize: 36px;
     --clients-heading-fontWeight: bold;
+
+    --modal-backdrop-zIndex: 100;
+    --modal-zIndex: 200;
+
+    --modal-backdrop-bgColor: rgba(0,0,0,0.2);
+
+    --modal-width: 528px;
+    --modal-minHeight: 581px;
+    --modal-padding: 40px;
+    --modal-borderRadius: 4px;
+
+    --modal-close-top: 8px;
+    --modal-close-right: 8px;
+    --modal-close-size: 30px;
+
+    --modal-title-fontSize: 20px;
+    --modal-title-fontWeight: 700;
+    --modal-title-lineHeight: 1.15;
+    --modal-title-marginBottom: 12px;
+
+    --modal-field-marginBottom: 10px;
+
+    --modal-label-fontSize: 12px;
+    --modal-label-marginBottom: 4px;
+
+    --modal-input-height: 40px;
+    --modal-input-paddingLeft: 38px;
+    --modal-input-borderRadius: 4px;
+    --modal-input-borderWidth: 1px;
+
+    --modal-icon-left: 12px;
+    --modal-icon-width: 18px;
+    --modal-icon-height: 18px;
+
+    --modal-textarea-height: 120px;
+    --modal-textarea-paddingY: 12px;
+    --modal-textarea-paddingX: 16px;
+
+    --modal-checkbox-marginTop: 20px;
+    --modal-checkbox-gap: 8px;
+    --modal-checkbox-size: 16px;
+    --modal-checkbox-borderRadius: 2px;
+    --modal-checkbox-borderWidth: 2px;
+
+    --modal-button-width: 200px;
+    --modal-button-height: 50px;
+    --modal-button-marginTop: 30px;
+    --modal-button-borderRadius: 4px;
+
+    --modal-button-fontSize: 16px;
+    --modal-button-fontWeight: 700;
+    --modal-button-letterSpacing: 0.06em;
 }

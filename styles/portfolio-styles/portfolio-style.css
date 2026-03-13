@@ -248,6 +248,16 @@ ul, ol, menu {
   --footer-socials-container-link-svg-wh: 20px;
   --footer-socials-container-link-svg-fill: white;
   --footer-socials-container-link-svg-hover-bgColor: #2196F3;
+  --footer-advert-form-colGap: 12px;
+  --footer-advert-form-input-padding: 15px 0 15px 16px;
+  --footer-advert-form-input-minWidth: 358px;
+  --footer-advert-form-input-border: 1px solid rgba(255, 255, 255, 0.3);
+  --footer-advert-form-input-borderRadius: 4px;
+  --footer-advert-form-button-colGap: 12px;
+  --footer-advert-form-button-color: white;
+  --footer-advert-form-button-padding: 10px 28px;
+  --footer-advert-form-button-bgColor: #2196F3;
+  --footer-advert-form-button-borderRadius: 4px;
 }
 
 :root {
@@ -458,7 +468,7 @@ body {
 .footer__info-container-addres {
   color: var(--footer-info-container-addres-fontColor);
 }
-.footer__socials-title {
+.footer__title {
   color: var(--footer-socials-title-color);
   font-size: var(--footer-socials-title-fontSize);
   font-family: "Roboto", sans-serif;
@@ -493,6 +503,34 @@ body {
 }
 .footer__socials-container-link:hover {
   background-color: var(--footer-socials-container-link-svg-hover-bgColor);
+}
+.footer__advert-form {
+  display: flex;
+  flex-direction: column;
+}
+.footer__advert-wrapper {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: var(--footer-advert-form-colGap);
+       column-gap: var(--footer-advert-form-colGap);
+}
+.footer__advert-input {
+  padding: var(--footer-advert-form-input-padding);
+  min-width: var(--footer-advert-form-input-minWidth);
+  border: var(--footer-advert-form-input-border);
+  border-radius: var(--footer-advert-form-input-borderRadius);
+  color: white;
+}
+.footer__advert-button {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: var(--footer-advert-form-button-colGap);
+       column-gap: var(--footer-advert-form-button-colGap);
+  color: var(--footer-advert-form-button-color);
+  padding: var(--footer-advert-form-button-padding);
+  background-color: var(--footer-advert-form-button-bgColor);
+  border-radius: var(--footer-advert-form-button-borderRadius);
+  cursor: pointer;
 }
 .footer .container {
   display: flex;
