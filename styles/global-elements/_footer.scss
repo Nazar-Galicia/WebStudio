@@ -25,12 +25,12 @@
         }
     }
     &__socials-title {
-        color: white;
-        font-size: 14px;
+        color: var(--footer-socials-title-color);
+        font-size: var(--footer-socials-title-fontSize);
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
-        font-weight: bold;
-        margin-bottom: 20px;
+        font-weight: var(--footer-socials-title-fontWeight);
+        margin-bottom: var(--footer-socials-title-marginBottom);
     }
 
     &__socials {
@@ -39,29 +39,29 @@
             display: flex;
             max-width: fit-content;
             margin: 0 auto;
-            column-gap: 10px;
+            column-gap: var(--footer-socials-container-colGap);
 
             &-link {
-                width: 44px;
-                height: 44px;
+                width: var(--footer-socials-container-link-wh);
+                height: var(--footer-socials-container-link-wh);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
-                border-radius: 100%;
+                border-radius: var(--footer-socials-container-link-borderRadius);
                 background-color: rgba($color: #FFF, $alpha: 0.1);
 
                 & svg {
-                    width: 20px;
-                    height: 20px;
+                    width: var(--footer-socials-container-link-svg-wh);
+                    height: var(--footer-socials-container-link-svg-wh);
                     
                     & use {
-                        fill: white;
+                        fill: var(--footer-socials-container-link-svg-fill);
                     }
                 }
 
                 &:hover {
-                    background-color: #2196F3;
+                    background-color: var(--footer-socials-container-link-svg-hover-bgColor);
                 }
             }
         }

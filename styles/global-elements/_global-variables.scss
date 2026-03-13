@@ -19,6 +19,9 @@
     --header-contacts-fontColor: #757575;
     --header-contacts-colGap: 50px;
     --header-contacts-email-hover-fontColor: #2196F3;
+    --header-contacts-colGap: 10px;
+    --header-contacts-svg-icon-width: 16px;
+    --header-contacts-svg-icon-height: 13px;
 
     --footer-width: 100%;
     --footer-height: 252px;
@@ -33,4 +36,16 @@
     --footer-info-container-info-lineHeight: calc(24 / 14);
 
     --footer-info-container-addres-fontColor: white;
+
+    --footer-socials-title-color: white;
+    --footer-socials-title-fontSize: 14px;
+    --footer-socials-title-fontWeight: bold;
+    --footer-socials-title-marginBottom: 20px;
+    
+    --footer-socials-container-colGap: 10px;
+    --footer-socials-container-link-wh: 44px;
+    --footer-socials-container-link-borderRadius: 100%;
+    --footer-socials-container-link-svg-wh: 20px;
+    --footer-socials-container-link-svg-fill: white;
+    --footer-socials-container-link-svg-hover-bgColor: #2196F3;
 }

@@ -45,6 +45,14 @@
     --what-we-do-heading-fontWeight: bold;
 
     --what-we-do-gallery-marginTop: 40px;
+
+    --what-we-do-card-text-bottom: 0;
+    --what-we-do-card-text-color: white;
+    --what-we-do-card-text-width: 100%;
+    --what-we-do-card-text-height: 70px;
+    --what-we-do-card-text-paddingTop: 25px;
+    --what-we-do-card-text-fontSize: 14px;
+    --what-we-do-card-text-fontWeight: bold;
     
     --our-team-height: 648px;
     --our-team-marginTop: 100px;
@@ -72,4 +80,29 @@
 
     --our-team-teammates-card-description-position-fontColor: #757575;
     --our-team-teammates-card-description-position-marginTop: 10px;
+
+    --our-team-teammates-card-socials-container-colGap: 10px;
+    
+    --our-team-teammates-card-social-link-wh: 44px;
+    --our-team-teammates-card-social-link-borderRadius: 100%;
+    --our-team-teammates-card-social-link-svg-wh: 20px;
+    --our-team-teammates-card-social-link-svg-fill: #AFB1B8;
+    --our-team-teammates-card-social-link-svg-hover-bgColor: #2196F3;
+    --our-team-teammates-card-social-link-svg-hover-fill: white;
+
+
+    --clients-padding: 50px 215px;
+
+    --clients-icons-list-marginTop: 50px;
+
+    --clients-list-item-svg-width: 170px;
+    --clients-list-item-svg-height: 92px;
+    --clients-list-item-svg-fill: #AFB1B8;
+    --clients-list-item-svg-border: 2px solid #AFB1B8;
+    --clients-list-item-svg-borderRadius: 5px;
+
+    --clients-list-item-svg-hover-fill: #2196F3;
+
+    --clients-heading-fontSize: 36px;
+    --clients-heading-fontWeight: bold;
 }

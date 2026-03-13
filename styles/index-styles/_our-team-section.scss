@@ -49,31 +49,31 @@
             display: flex;
             max-width: fit-content;
             margin: 0 auto;
-            column-gap: 10px;
+            column-gap: var(--our-team-teammates-card-socials-container-colGap);
 
             &-link {
-                width: 44px;
-                height: 44px;
+                width: var(--our-team-teammates-card-social-link-wh);
+                height: var(--our-team-teammates-card-social-link-wh);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
-                border-radius: 100%;
+                border-radius: var(--our-team-teammates-card-social-link-borderRadius);
 
                 & svg {
-                    width: 20px;
-                    height: 20px;
+                    width: var(--our-team-teammates-card-social-link-svg-wh);
+                    height: var(--our-team-teammates-card-social-link-svg-wh);
                     
                     & use {
-                        fill: #AFB1B8;
+                        fill: var(--our-team-teammates-card-social-link-svg-fill);
                     }
                 }
 
                 &:hover {
-                    background-color: #2196F3;
+                    background-color: var(--our-team-teammates-card-social-link-svg-hover-bgColor);
 
                     & svg use {
-                        fill: white;
+                        fill: var(--our-team-teammates-card-social-link-svg-hover-fill);
                     }
                 }
             }

@@ -24,15 +24,15 @@
 
         &-text {
             position: absolute;
-            bottom: 0;
-            color: white;
-            width: 100%;
-            height: 70px;
+            bottom: var(--what-we-do-card-text-bottom);
+            color: var(--what-we-do-card-text-color);
+            width: var(--what-we-do-card-text-width);
+            height: var(--what-we-do-card-text-height);
             background-color: rgba($color: #000000, $alpha: 0.6); 
             text-align: center;
-            padding-top: 25px;
-            font-size: 14px;
-            font-weight: bold;
+            padding-top: var(--what-we-do-card-text-paddingTop);
+            font-size: var(--what-we-do-card-text-fontSize);
+            font-weight: var(--what-we-do-card-text-fontWeight);
             font-family: "Roboto", sans-serif;
             text-transform: uppercase;
         }

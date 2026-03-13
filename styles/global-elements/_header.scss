@@ -43,11 +43,11 @@
 
             display: flex;
             align-items: center;
-            column-gap: 10px;
+            column-gap: var(--header-contacts-colGap);
 
             & svg {
-                width: 16px;
-                height: 13px;
+                width: var(--header-contacts-svg-icon-width);
+                height: var(--header-contacts-svg-icon-height);
             }
         }
 

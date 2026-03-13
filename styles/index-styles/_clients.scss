@@ -1,33 +1,33 @@
 .clients {
-    padding: 50px 215px;
+    padding: var(--clients-padding);
 
     &__icons-list {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 50px;
+        margin-top: var(--clients-icons-list-marginTop);
 
         &-item {
             cursor: pointer;
 
             svg {
-                width: 170px;
-                height: 92px;
-                fill: #AFB1B8;
-                border: 2px solid #AFB1B8;
-                border-radius: 5px;
+                width: var(--clients-list-item-svg-width);
+                height: var(--clients-list-item-svg-height);
+                fill: var(--clients-list-item-svg-fill);
+                border: var(--clients-list-item-svg-border);
+                border-radius: var(--clients-list-item-svg-borderRadius);
             }
 
             &:hover svg {
-                fill: #2196F3;
-                border-color: #2196F3;
+                fill: var(--clients-list-item-svg-hover-fill);
+                border-color: var(--clients-list-item-svg-hover-fill);
             }
         }
     }
 
     &__heading {
-        font-size: 36px;
-        font-weight: bold;
+        font-size: var(--clients-heading-fontSize);
+        font-weight: var(--clients-heading-fontWeight);
         text-align: center;
     }
 }
