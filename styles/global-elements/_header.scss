@@ -1,3 +1,18 @@
+.current-active-page {
+    color: #2196F3;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: var(--header-underscore-width);
+        height: var(--header-underscore-height);
+        background-color: var(--header-underscore-bgColor);
+        border-radius: var(--header-underscore-borderRadius);
+        bottom: 0;
+    }
+}
+
 .header {
     min-width: var(--header-width);
     min-height: var(--header-height);
@@ -10,6 +25,7 @@
         align-items: center;
         justify-content: space-around;
         column-gap: var(--header-nav-colGap);
+        height: var(--header-height);
 
         &-navigation-list {
             display: flex;
@@ -17,12 +33,18 @@
             justify-content: space-between;
             min-width: var(--header-navigation-list-width);
             column-gap: var(--header-navigation-list-colGap);
+            
 
             &-item-link {
                 font-size: var(--header-navigation-list-link-fontSize);
                 font-weight: var(--header-navigation-list-link-fontWeight);
                 cursor: pointer;
                 transition: all 0.3s;
+                display: flex;
+                flex-direction: column;
+                height: var(--header-height);
+                justify-content: center;
+                position: relative;
 
                 &:hover {
                     color: var(--header-navigation-list-link-hover-fontColor);

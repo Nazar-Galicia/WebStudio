@@ -72,6 +72,36 @@
             &:hover {
                 box-shadow: var(--portfolio-projects-card-boxShadow);
             }
+
+            &-overlay {
+                position: absolute;
+                inset: 0;
+                background-color: rgba($color: #2196f3, $alpha: 0.9);
+                width: var(--portfolio-projects-card-overlay-wh);
+                height: var(--portfolio-projects-card-overlay-wh);
+                color: var(--portfolio-projects-card-overlay-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.2s;
+
+                &-text {
+                    max-width: var(--portfolio-projects-card-overlay-text-maxWidth);
+                    line-height: var(--portfolio-projects-card-overlay-text-lineHeight);
+                    letter-spacing: var(--portfolio-projects-card-overlay-text-letterSpacing);
+                }
+            }
+
+            &-image-wrapper {
+                position: relative;
+
+                &:hover .portfolio__projects-card-overlay {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+            }
         }
     }
 }

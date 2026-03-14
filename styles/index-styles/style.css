@@ -228,6 +228,10 @@ ul, ol, menu {
   --header-contacts-colGap: 10px;
   --header-contacts-svg-icon-width: 16px;
   --header-contacts-svg-icon-height: 13px;
+  --header-underscore-width: 100%;
+  --header-underscore-height: 4px;
+  --header-underscore-bgColor: #2196F3;
+  --header-underscore-borderRadius: 2px;
   --footer-width: 100%;
   --footer-height: 252px;
   --footer-bgColor: #2F303A;
@@ -400,6 +404,20 @@ body {
   color: var(--logo-span-fontColor);
 }
 
+.current-active-page {
+  color: #2196F3;
+}
+.current-active-page::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: var(--header-underscore-width);
+  height: var(--header-underscore-height);
+  background-color: var(--header-underscore-bgColor);
+  border-radius: var(--header-underscore-borderRadius);
+  bottom: 0;
+}
+
 .header {
   min-width: var(--header-width);
   min-height: var(--header-height);
@@ -413,6 +431,7 @@ body {
   justify-content: space-around;
   -moz-column-gap: var(--header-nav-colGap);
        column-gap: var(--header-nav-colGap);
+  height: var(--header-height);
 }
 .header__nav-navigation-list {
   display: flex;
@@ -427,6 +446,11 @@ body {
   font-weight: var(--header-navigation-list-link-fontWeight);
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: var(--header-height);
+  justify-content: center;
+  position: relative;
 }
 .header__nav-navigation-list-item-link:hover {
   color: var(--header-navigation-list-link-hover-fontColor);
