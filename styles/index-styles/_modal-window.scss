@@ -49,6 +49,8 @@
     border-radius: 100%;
 
     cursor: pointer;
+    transition-timing-function: var(--transition-timning-function);
+    transition: color, var(--transition-time);
 
     &:hover {
       color: #2196F3;
@@ -80,11 +82,13 @@
 
       transform: translateY(-50%);
 
-      transition: all 0.2s;
+      & use {
+        transition-timing-function: var(--transition-timning-function);
+        transition: fill, var(--transition-time);
+      }
   }
   &__field {
     margin-bottom: var(--modal-field-marginBottom);
-    transition: all 0.2s;
 
     &:focus-within .modal__icon use,
     &:hover .modal__icon use {
@@ -112,6 +116,8 @@
 
     border: var(--modal-input-borderWidth) solid #212121;
     border-radius: var(--modal-input-borderRadius);
+    transition-timing-function: var(--transition-timning-function);
+    transition: border, var(--transition-time);
 
     &:focus, &:hover {
       border: var(--modal-input-borderWidth) solid #2196F3;
@@ -131,7 +137,8 @@
 
     resize: none;
 
-    transition: border 250ms;
+    transition-timing-function: var(--transition-timning-function);
+    transition: border, var(--transition-time);
 
     &:focus, &:hover {
       border: var(--modal-input-borderWidth) solid #2196F3;
@@ -212,7 +219,8 @@
 
     cursor: pointer;
 
-    transition: background-color 250ms;
+    transition-timing-function: var(--transition-timning-function);
+    transition: background-color, var(--transition-time);
 
     &:hover {
       background-color: #188CE8;

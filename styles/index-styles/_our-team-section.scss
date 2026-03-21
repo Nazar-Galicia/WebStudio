@@ -59,6 +59,8 @@
                 justify-content: center;
                 cursor: pointer;
                 border-radius: var(--our-team-teammates-card-social-link-borderRadius);
+                transition-timing-function: var(--transition-timning-function);
+                transition: background-color, var(--transition-time);
 
                 & svg {
                     width: var(--our-team-teammates-card-social-link-svg-wh);
@@ -66,6 +68,8 @@
                     
                     & use {
                         fill: var(--our-team-teammates-card-social-link-svg-fill);
+                        transition-timing-function: var(--transition-timning-function);
+                        transition: fill, var(--transition-time);
                     }
                 }
 

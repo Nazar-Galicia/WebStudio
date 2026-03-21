@@ -20,6 +20,8 @@
             cursor: pointer;
             transition: all 0.4s;
             line-height: var(--portfolio-filter-button-lineHeight);
+            transition-timing-function: var(--transition-timning-function);
+            transition: background-color, color, box-shadow, var(--transition-time);
 
             &:hover {
                 background-color: var(--portfolio-filter-button-hover-bgColor);
@@ -44,6 +46,8 @@
             max-height: var(--portfolio-projects-card-height);
             transition: all 0.2s;
             cursor: pointer;
+            transition-timing-function: var(--transition-timning-function);
+            transition: box-shadow, var(--transition-time);
 
             &-image {
                 width: var(--portfolio-projects-card-image-width);
@@ -85,7 +89,8 @@
                 align-items: center;
                 opacity: 0;
                 pointer-events: none;
-                transition: all 0.2s;
+                transition-timing-function: var(--transition-timning-function);
+                transition: opacity, var(--transition-time);
 
                 &-text {
                     max-width: var(--portfolio-projects-card-overlay-text-maxWidth);

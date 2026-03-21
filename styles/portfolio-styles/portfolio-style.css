@@ -210,6 +210,8 @@ ul, ol, menu {
 }
 
 :root {
+  --transition-time: 250ms;
+  --transition-timning-function: cubic-bezier(0.4, 0, 0.2, 1);
   --header-width: 100%;
   --header-height: 80px;
   --header-bgColor: white;
@@ -365,6 +367,8 @@ body {
   height: var(--header-height);
   justify-content: center;
   position: relative;
+  transition-timing-function: var(--transition-timning-function);
+  transition: color, var(--transition-time);
 }
 .header__nav-navigation-list-item-link:hover {
   color: var(--header-navigation-list-link-hover-fontColor);
@@ -390,12 +394,18 @@ body {
 .header__contacts-email {
   transition: all 0.3s;
   cursor: pointer;
+  transition-timing-function: var(--transition-timning-function);
+  transition: color, var(--transition-time);
 }
 .header__contacts-email:hover {
   color: var(--header-contacts-email-hover-fontColor);
 }
 .header__contacts-email:hover svg {
   fill: var(--header-contacts-email-hover-fontColor);
+}
+.header__contacts-email svg {
+  transition-timing-function: var(--transition-timning-function);
+  transition: fill, var(--transition-time);
 }
 
 .header .container {
@@ -426,6 +436,8 @@ body {
   cursor: pointer;
   transition: all 0.4s;
   line-height: var(--portfolio-filter-button-lineHeight);
+  transition-timing-function: var(--transition-timning-function);
+  transition: background-color, color, box-shadow, var(--transition-time);
 }
 .portfolio__filters-button:hover {
   background-color: var(--portfolio-filter-button-hover-bgColor);
@@ -448,6 +460,8 @@ body {
   max-height: var(--portfolio-projects-card-height);
   transition: all 0.2s;
   cursor: pointer;
+  transition-timing-function: var(--transition-timning-function);
+  transition: box-shadow, var(--transition-time);
 }
 .portfolio__projects-card-image {
   width: var(--portfolio-projects-card-image-width);
@@ -485,7 +499,8 @@ body {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.2s;
+  transition-timing-function: var(--transition-timning-function);
+  transition: opacity, var(--transition-time);
 }
 .portfolio__projects-card-overlay-text {
   max-width: var(--portfolio-projects-card-overlay-text-maxWidth);
@@ -548,6 +563,8 @@ body {
   cursor: pointer;
   border-radius: var(--footer-socials-container-link-borderRadius);
   background-color: rgba(255, 255, 255, 0.1);
+  transition-timing-function: var(--transition-timning-function);
+  transition: background-color, var(--transition-time);
 }
 .footer__socials-container-link svg {
   width: var(--footer-socials-container-link-svg-wh);

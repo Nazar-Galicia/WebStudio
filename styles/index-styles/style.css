@@ -210,6 +210,8 @@ ul, ol, menu {
 }
 
 :root {
+  --transition-time: 250ms;
+  --transition-timning-function: cubic-bezier(0.4, 0, 0.2, 1);
   --header-width: 100%;
   --header-height: 80px;
   --header-bgColor: white;
@@ -451,6 +453,8 @@ body {
   height: var(--header-height);
   justify-content: center;
   position: relative;
+  transition-timing-function: var(--transition-timning-function);
+  transition: color, var(--transition-time);
 }
 .header__nav-navigation-list-item-link:hover {
   color: var(--header-navigation-list-link-hover-fontColor);
@@ -476,12 +480,18 @@ body {
 .header__contacts-email {
   transition: all 0.3s;
   cursor: pointer;
+  transition-timing-function: var(--transition-timning-function);
+  transition: color, var(--transition-time);
 }
 .header__contacts-email:hover {
   color: var(--header-contacts-email-hover-fontColor);
 }
 .header__contacts-email:hover svg {
   fill: var(--header-contacts-email-hover-fontColor);
+}
+.header__contacts-email svg {
+  transition-timing-function: var(--transition-timning-function);
+  transition: fill, var(--transition-time);
 }
 
 .header .container {
@@ -531,6 +541,8 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 100%;
   cursor: pointer;
+  transition-timing-function: var(--transition-timning-function);
+  transition: color, var(--transition-time);
 }
 .modal__close:hover {
   color: #2196F3;
@@ -553,11 +565,13 @@ body {
   width: var(--modal-icon-width);
   height: var(--modal-icon-height);
   transform: translateY(-50%);
-  transition: all 0.2s;
+}
+.modal__icon use {
+  transition-timing-function: var(--transition-timning-function);
+  transition: fill, var(--transition-time);
 }
 .modal__field {
   margin-bottom: var(--modal-field-marginBottom);
-  transition: all 0.2s;
 }
 .modal__field:focus-within .modal__icon use, .modal__field:hover .modal__icon use {
   fill: #2196F3;
@@ -576,6 +590,8 @@ body {
   padding-left: var(--modal-input-paddingLeft);
   border: var(--modal-input-borderWidth) solid #212121;
   border-radius: var(--modal-input-borderRadius);
+  transition-timing-function: var(--transition-timning-function);
+  transition: border, var(--transition-time);
 }
 .modal__input:focus, .modal__input:hover {
   border: var(--modal-input-borderWidth) solid #2196F3;
@@ -588,7 +604,8 @@ body {
   border: var(--modal-input-borderWidth) solid #212121;
   border-radius: var(--modal-input-borderRadius);
   resize: none;
-  transition: border 250ms;
+  transition-timing-function: var(--transition-timning-function);
+  transition: border, var(--transition-time);
 }
 .modal__textarea:focus, .modal__textarea:hover {
   border: var(--modal-input-borderWidth) solid #2196F3;
@@ -646,7 +663,8 @@ body {
   font-weight: var(--modal-button-fontWeight);
   letter-spacing: var(--modal-button-letterSpacing);
   cursor: pointer;
-  transition: background-color 250ms;
+  transition-timing-function: var(--transition-timning-function);
+  transition: background-color, var(--transition-time);
 }
 .modal__button:hover {
   background-color: #188CE8;
@@ -836,6 +854,8 @@ body {
   justify-content: center;
   cursor: pointer;
   border-radius: var(--our-team-teammates-card-social-link-borderRadius);
+  transition-timing-function: var(--transition-timning-function);
+  transition: background-color, var(--transition-time);
 }
 .our-team__teammate-card-socials-container-link svg {
   width: var(--our-team-teammates-card-social-link-svg-wh);
@@ -843,6 +863,8 @@ body {
 }
 .our-team__teammate-card-socials-container-link svg use {
   fill: var(--our-team-teammates-card-social-link-svg-fill);
+  transition-timing-function: var(--transition-timning-function);
+  transition: fill, var(--transition-time);
 }
 .our-team__teammate-card-socials-container-link:hover {
   background-color: var(--our-team-teammates-card-social-link-svg-hover-bgColor);
@@ -869,6 +891,8 @@ body {
   fill: var(--clients-list-item-svg-fill);
   border: var(--clients-list-item-svg-border);
   border-radius: var(--clients-list-item-svg-borderRadius);
+  transition-timing-function: var(--transition-timning-function);
+  transition: fill, border-color, var(--transition-time);
 }
 .clients__icons-list-item:hover svg {
   fill: var(--clients-list-item-svg-hover-fill);
@@ -928,6 +952,8 @@ body {
   cursor: pointer;
   border-radius: var(--footer-socials-container-link-borderRadius);
   background-color: rgba(255, 255, 255, 0.1);
+  transition-timing-function: var(--transition-timning-function);
+  transition: background-color, var(--transition-time);
 }
 .footer__socials-container-link svg {
   width: var(--footer-socials-container-link-svg-wh);

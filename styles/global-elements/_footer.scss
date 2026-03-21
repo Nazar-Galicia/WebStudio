@@ -50,6 +50,8 @@
                 cursor: pointer;
                 border-radius: var(--footer-socials-container-link-borderRadius);
                 background-color: rgba($color: #FFF, $alpha: 0.1);
+                transition-timing-function: var(--transition-timning-function);
+                transition: background-color, var(--transition-time);
 
                 & svg {
                     width: var(--footer-socials-container-link-svg-wh);

@@ -45,6 +45,8 @@
                 height: var(--header-height);
                 justify-content: center;
                 position: relative;
+                transition-timing-function: var(--transition-timning-function);
+                transition: color, var(--transition-time);
 
                 &:hover {
                     color: var(--header-navigation-list-link-hover-fontColor);
@@ -76,13 +78,20 @@
         &-email {
             transition: all 0.3s;
             cursor: pointer;
-        }
+            transition-timing-function: var(--transition-timning-function);
+            transition: color, var(--transition-time);
 
-        &-email:hover {
-            color: var(--header-contacts-email-hover-fontColor);
+            &:hover {
+                color: var(--header-contacts-email-hover-fontColor);
+
+                & svg {
+                    fill: var(--header-contacts-email-hover-fontColor);
+                }
+            }
 
             & svg {
-                fill: var(--header-contacts-email-hover-fontColor);
+                transition-timing-function: var(--transition-timning-function);
+                transition: fill, var(--transition-time);
             }
         }
     }

@@ -16,6 +16,8 @@
                 fill: var(--clients-list-item-svg-fill);
                 border: var(--clients-list-item-svg-border);
                 border-radius: var(--clients-list-item-svg-borderRadius);
+                transition-timing-function: var(--transition-timning-function);
+                transition: fill, border-color, var(--transition-time);
             }
 
             &:hover svg {
