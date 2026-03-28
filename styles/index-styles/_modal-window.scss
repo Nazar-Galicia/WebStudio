@@ -9,9 +9,14 @@
   align-items: center;
 
   z-index: var(--modal-backdrop-zIndex);
+  transition-timing-function: var(--transition-timning-function);
+  transition: opacity, var(--transition-time);
+
+  &.is-hidden .modal {
+    transform: scale(0.3);
+  }
 }
 .is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -31,6 +36,9 @@
   border-radius: var(--modal-borderRadius);
 
   z-index: var(--modal-zIndex);
+
+  transition-timing-function: var(--transition-timning-function);
+  transition: scale, var(--transition-time);
 
   &__close {
     position: absolute;
